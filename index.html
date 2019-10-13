@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script src="./WC/ui-components/dist/UIButton/polyfills.js"></script>
+        <script src="./WC/ui-components/dist/UIButton/vendor.js"></script>
+        <script src="./WC/ui-components/dist/UIButton/runtime.js"></script>
+        <script src="./WC/ui-components/dist/UIButton/scripts.js"></script>
+        <script src="./WC/ui-components/dist/UIButton/main.js"></script>
+    </head>
+    <body>
+        <div>
+            <ui-button id="custom-button" label="Our first Web Component!"></ui-button>
+        </div>
+
+        <script>
+            const customButton = document.getElementById('custom-button');
+            customButton.addEventListener('clickAfterDebounce', console.log);
+        </script>
+    </body>
+</html>
